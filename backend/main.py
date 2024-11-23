@@ -15,7 +15,7 @@ app.add_middleware(
 )
 
 # Initialize the model
-model = PlayerSimilarityModel("../data/raw/player_raw_data.csv")
+model = PlayerSimilarityModel("data/raw/player_raw_data.csv")
 model.load_and_preprocess_data()
 model.create_preprocessing_pipeline()
 model.fit_transform_data()
